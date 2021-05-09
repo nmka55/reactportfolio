@@ -1,0 +1,38 @@
+{
+  "main": {
+    "firstname": "Nyambayar",
+    "lastname": "Amarsaikhan",
+    "avatar": "https://media-exp1.licdn.com/dms/image/C5603AQE77l5mukA47A/profile-displayphoto-shrink_800_800/0/1588339348279?e=1623283200&v=beta&t=NwI-AcEaK_w87d4smfIvwzKCbMsQu2bKXjTeV4_wbiM",
+    "title": [
+      "Front-end Developer 💻",
+      "Techie 📱",
+      "Amateur Photographer 📸",
+      "Memeophile 😄",
+      "MCU fan 📼"
+    ]
+  },
+  "aboutme": [
+    "Hello, my name is Nyambayar Amarsaikhan. I'm a front-end developer living in Ulaanbaatar, Mongolia.",
+    "Quick intro about me: graduated my uni in 2018, worked for 2+ years on web and mobile projects (creating pages according to given UI design, fixing bugs, basic maintaining).",
+    "Hmm, what else... I'm an introvert who loves memes and Marvel movies. Also, have a hobby in photography, tech collecting and their repairs.",
+    "I love my profession because user interface is the face of the software and I believe that making it beautiful, user-friendly and intuitive is what makes the users to fall in love with the product, builds up the trust.",
+    "Currently, I'm looking for a new job that helps me to improve my skills and give me new exciting challanges and experiences."
+  ],
+  "experience": {
+    "skills": [
+      {
+        "title": "Javascript",
+        "subtitle": "ReactJS, React Native",
+        "percent": "85%"
+      },
+      { "title": "C#", "subtitle": ".NET Framework", "percent": "70%" },
+      { "title": "HTML/CSS", "subtitle": "", "percent": "80%" }
+    ]
+  },
+  "contactme": {
+    "email": "nmka.8099@gmail.com",
+    "facebook": "www.fb.com/nmka55",
+    "linkedin": "https://www.linkedin.com/in/nmka55/",
+    "github": "https://github.com/nmka55"
+  }
+}

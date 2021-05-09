@@ -1,34 +1,38 @@
-import { Box, Button, Heading, Paragraph, Text } from "grommet";
-import {
-  Facebook,
-  Github,
-  Link,
-  Linkedin,
-  MailOption,
-  Phone,
-} from "grommet-icons";
+import * as data from "../data.json";
 
+import { Avatar, Box, Button, Text } from "grommet";
+import { Facebook, Github, Linkedin, MailOption } from "grommet-icons";
+
+import { MainBox } from "../components";
 import React from "react";
 
 export default function AboutMe() {
-  return (
-    <Box fill flex justify="center" align="center">
-      <Heading margin="none" level={1} size="large">
-        Contact me
-      </Heading>
-
+  let children = (
+    <>
+      <Avatar size="10em" src={data?.main?.avatar} />
       <Box margin="medium">
-        Nyambayar Amarsaikhan
+        <Text>
+          {data?.main?.firstname} {data?.main?.lastname}
+        </Text>
         <Box margin="medium" direction="row" justify="between">
-          <Button primary icon={<Phone />} label="Call me" />{" "}
-          <Button plain label="Write an email" />
-        </Box>
-        <Box margin="medium" direction="row" justify="evenly">
+          <Button plain icon={<MailOption />} />
           <Button plain icon={<Facebook />} />
           <Button plain icon={<Linkedin />} />
           <Button plain icon={<Github />} />
         </Box>
       </Box>
-    </Box>
+    </>
+  );
+  return (
+    <MainBox
+      id="Contact"
+      title="Contact"
+      children={children}
+      innerBoxProps={{
+        direction: "row",
+        justify: "center",
+        align: "center",
+      }}
+    />
   );
 }

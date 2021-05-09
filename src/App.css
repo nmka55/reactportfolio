@@ -9,6 +9,10 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  width: 100%;
+  margin: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 }
 
 h1,
@@ -21,16 +25,6 @@ h6 {
   font-weight: bold !important;
 }
 
-.indicator {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  font-weight: 100;
-  user-select: none;
+.active {
+  border-bottom: 1px solid #fff;
 }

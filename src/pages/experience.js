@@ -1,11 +1,13 @@
-import { Box, Heading, Text } from "grommet";
+import * as data from "../data.json";
 
-import ProgressBar from "react-customizable-progressbar";
+import { Box, Text } from "grommet";
+
+import { MainBox } from "../components";
 import React from "react";
 
 const Skill = (props) => (
   <Box direction="row" justify="center" align="center">
-    <ProgressBar
+    {/* <ProgressBar
       radius={40}
       progress={props.progress}
       strokeWidth={2}
@@ -18,23 +20,14 @@ const Skill = (props) => (
       <div className="indicator">
         <div>{props.progress}%</div>
       </div>
-    </ProgressBar>
+    </ProgressBar> */}
     <Text>{props.name}</Text>
   </Box>
 );
 
-export default function AboutMe() {
-  return (
-    <Box fill flex justify="center" align="center">
-      <Heading margin="none" level={1} size="large">
-        Experience
-      </Heading>
-      <Box margin="medium">
-        <Skill name="Javascript (React, React Native)" progress={80} />
-        <Skill name="Javascript (React, React Native)" progress={80} />
-        <Skill name="Javascript (React, React Native)" progress={80} />
-        <Skill name="Javascript (React, React Native)" progress={80} />
-      </Box>
-    </Box>
-  );
+export default function Experience() {
+  let children = data?.experience?.skills?.map((data, index) => (
+    <Skill key={index} name={data.title} progress={data.percent} />
+  ));
+  return <MainBox id="Experience" title="Experience" children={children} />;
 }
